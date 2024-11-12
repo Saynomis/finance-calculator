@@ -39,9 +39,9 @@ function App() {
   // Handle calculation who owes who money
   function handleFinalCalculation() {
     if (firstPersonExpensesTotal > secondPersonExpensesTotal) {
-      setFinalCalculation(firstPersonExpensesTotal - secondPersonExpensesTotal);
+      setFinalCalculation((firstPersonExpensesTotal - secondPersonExpensesTotal)/2);
     } else if (secondPersonExpensesTotal > firstPersonExpensesTotal) {
-      setFinalCalculation(secondPersonExpensesTotal - firstPersonExpensesTotal);
+      setFinalCalculation((secondPersonExpensesTotal - firstPersonExpensesTotal/2));
     }
   }
 
